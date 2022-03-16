@@ -1,0 +1,38 @@
+{
+  "talent": [
+    {
+      "first_name": "Christie",
+      "last_name": "Tanfield",
+      "email": "ctanfield1@state.gov",
+      "username": "Male",
+      "password": "TGVnqaz6",
+      "id": 1
+    },
+    {
+      "firstname": "shiv",
+      "lastname": "kumar",
+      "username": "shivkumar",
+      "email": "shivkumarprajapat28@gmail.com",
+      "password": "123456546",
+      "id": 2
+    }
+  ],
+  "fun": [
+    {
+      "id": "d6141fd1-97a3-474c-b8df-7ff4d378f3d4",
+      "first_name": "Shaina",
+      "last_name": "Brogden",
+      "email": "sbrogden3@census.gov",
+      "username": "Genderqueer",
+      "password": "vgSxqMcQ"
+    },
+    {
+      "firstname": "kumar",
+      "lastname": "shiv",
+      "username": "kumarshiv",
+      "email": "kumarshiv85892@gmail.com",
+      "password": "2135646456546",
+      "id": "_OdxfJC"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&display=swap");
+
+:root {
+  --main-color: #242424;
+  --bg-color: #121212;
+  --border-color: #10ff8d;
+  --text-color: #b5d8fa;
+}
+
+@mixin flex($items, $justify, $direction) {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  align-items: $items;
+  justify-content: $justify;
+  flex-direction: $direction;
+}
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background-color: var(--bg-color) !important;
+}
+
+.form-section {
+  @include flex(center, center, null);
+  height: 100vh;
+  width: 100%;
+  .form {
+    background-color: var(--main-color);
+    border-radius: 10px;
+    padding: 20px;
+    .heading {
+      text-align: center;
+      color: var(--text-color);
+      margin: 15px 0;
+      font-size: 23px;
+    }
+    .nav-tabs {
+      border: none !important;
+      justify-content: center;
+      background: var(--bg-color);
+      width: fit-content;
+      margin: 0 auto;
+      padding: 5px;
+      border-radius: 50px;
+      .nav-link {
+        border-radius: 50px !important;
+        color: var(--text-color);
+        border: 0;
+        &.active {
+          border: none;
+          background-color: var(--border-color) !important;
+          color: #20574f;
+        }
+      }
+    }
+    .form-check-label,
+    .form-label {
+      color: #a1acb2;
+      font-size: 14px;
+    }
+    .form-control {
+      border-radius: 50px;
+      background-color: transparent !important;
+      border: 2px solid var(--border-color) !important;
+      font-size: 14px;
+      color: var(--border-color);
+      &::placeholder {
+        color: #566976;
+      }
+      &:focus {
+        box-shadow: none !important;
+        background-color: transparent !important;
+      }
+    }
+    .check-sec {
+      text-align: center;
+      @include flex(null, center, null);
+      width: 100%;
+      margin: 0 auto;
+      a {
+        color: var(--border-color);
+        font-size: 14px;
+        margin-left: 10px;
+      }
+      .form-check-input {
+        &:focus {
+          box-shadow: 0 0 0.25rem var(--border-color);
+        }
+        &:checked[type="checkbox"] {
+          border: 0;
+          background-color: var(--border-color);
+        }
+      }
+    }
+    .btn {
+      border-radius: 50px;
+      background-color: var(--border-color);
+      border: 1px solid transparent;
+      color: #20574f;
+      font-size: 14px;
+      padding: 5px 37px;
+      &:hover {
+        background-color: transparent;
+        border-color: var(--border-color);
+        color: var(--text-color);
+      }
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}
+@media (max-width: 576px) {
+  .form-section {
+    margin: 20px 0;
+    .heading {
+      margin: 0;
+      font-size: 20px;
+    }
+  }
+}
